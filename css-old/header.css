@@ -1,0 +1,47 @@
+#mobile-header{
+	display:none;
+	background:#2a3442;
+}
+.mobile-nav-show .logo{
+	display: inline-block;
+    background-image:url('../images/nav-logo.png');
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+    float: left;
+	height:30px;
+	width:200px;
+	margin:5px 0;
+}
+.mobile-toggles{
+	float:right;
+	margin-top:8px;
+	color:#fff;
+}
+.mobile-toggles .fa-times{
+	display:none;
+}
+.mobile-toggles.open .fa-times{
+	display:inline-block;
+}
+.mobile-toggles.open .fa-bars{
+	display:none;
+}
+.mobile-nav{
+	text-align:center;
+	padding-bottom:40px;
+}
+.mobile-nav a.cta-btn{
+	color:#9d7341;
+}
+.mobile-nav a.cta-btn:hover{
+	color:#fff;
+}
+.mobile-nav li a{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.mobile-nav li{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}

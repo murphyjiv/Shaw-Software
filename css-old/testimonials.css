@@ -1,0 +1,118 @@
+.test-wrapper{
+	margin:0;
+	height: 250px;
+	overflow: hidden;
+	position:relative;
+}
+.testimonial-slider-wrap{
+	position:absolute;
+}
+
+.testimonial{
+	margin:0;
+	background-color:#2a3442;
+	float: left;
+}
+
+.testimonial p{
+	font-size:18px;
+	line-height:25px;
+	color: #fff;
+	margin-top:10px;
+	text-align:center;
+}
+.testimonial p.author{
+	font-size: 14px;
+    margin-top: 20px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 700;
+	text-align:center;
+}
+
+.testimonial .test-content{
+    width: 75%;
+    height: 275px;
+    background-color: #2a3442;
+    padding: 20px 40px;
+	margin:0 auto;
+}
+.testimonial.video .test-content{
+    width: 50%;
+}
+.test-container {
+	padding: 40px 80px;
+	position: relative;
+}
+.prevbutton, .prevslide{
+	font-size: 8px;
+	display: block;
+	height: auto;
+	width: auto;
+	line-height: 0;
+	position: absolute;
+	left: 20px;
+	top: 40%;
+    border: 2px solid #9d7341;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+    transition: color 250ms;
+    padding: 7px;
+    border-radius: 90px;
+    padding-right: 8px;
+}
+/*.prevbutton:before, .prevslide:before {
+	content: "\f053";
+	font-family: "FontAwesome";
+}*/
+.nextbutton, .nextslide {
+    font-size: 8px;
+    display: block;
+    height: auto;
+    width: auto;
+    line-height: 0;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    border: 2px solid #9d7341;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+    transition: color 250ms;
+    padding: 7px;
+    border-radius: 90px;
+    padding-left: 8px;
+	
+}
+.nextbutton .fa, .nextslide .fa{
+	margin-right: -2px;
+}
+.prevbutton .fa, .prevslide .fa{
+	margin-left: -2px;
+}
+/*.nextbutton:before, .nextslide:before {
+	content: "\f054";
+	font-family: "FontAwesome";
+}*/
+.nextbutton:hover, .prevbutton:hover, .nextslide:hover, .prevslide:hover {
+	background-color:#9d7341;
+	color: #fff;
+	transition: color 250ms;
+}
+.nextbutton.disabled, .prevbutton.disabled, .nextslide.disabled, .prevslide.disabled {
+	display:none;
+}
+.test-container h2{
+	text-align:center;
+}
+.quote-marks{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image:url('../images/quotes.png');
+    margin: 0 auto;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
