@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "NevisBold";
+	src: url('../fonts/nevis.ttf');
+}
+@font-face {
+    font-family: "GothamCondensed";
+	src: url('../fonts/gclr.otf');
+}
+@font-face {
+    font-family: "GothamBold";
+	src: url('../fonts/gothambold.otf');
+}
+h1, h2, h3{
+	font-size:48px;
+	color:#2a3442;
+    font-family: "NevisBold";
+	text-transform:uppercase;
+	margin:0;
+}
+h2{
+	font-size:36px;
+}
+h3{
+	font-size:24px;
+	line-height:30px;
+}
+h4{
+    font-family: "GothamCondensed";
+	font-size:20px;
+	letter-spacing:2px;
+	color:#2a3442;
+	margin:0;
+}
+p, a{
+    font-family: "GothamBold";
+	font-size:14px;
+	line-height:18px;
+	color:#2a3442;
+	text-decoration:none;
+}
+a{
+	color:#9d7341;
+}
+a.cta-btn, .contact-form-wrap input[type="submit"]{
+	color:#2a3442;
+	padding:10px 30px;
+	border:2px solid #9d7341;
+	text-transform:uppercase;
+	text-decoration:none;
+    font-family: "GothamBold";
+	margin-top:10px;
+	display:inline-block;
+	transition:200ms;
+}
+a.cta-btn:hover{
+	color:#fff;
+	border:2px solid #9d7341;
+	background-color:#9d7341;
+	text-decoration:none;
+}
+ul{
+	margin-left:40px;
+}
+li{
+	list-style:disc;
+}
