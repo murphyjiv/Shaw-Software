@@ -1,11 +1,16 @@
 @font-face {
     font-family: "GothamBold";
-	src: url('fonts/gothambold.otf');
+	src: url('../assets/fonts/gothambold.otf');
+}
+
+@font-face {
+    font-family: "GothamCondensedLight";
+	src: url('../assets/fonts/gclr.otf');
 }
 
 body{
-	height:3000px;
 	background-color: black;
+	min-height: 100vh;
 }
 
 #navContainer{
@@ -17,11 +22,13 @@ body{
 	border-radius: 0;
 	border: none;
 	transition: 0.3s;
+	z-index: 201;
 }
 
 #contentContainer{
 	max-width: 1040px;
 	padding: 0;
+	z-index: 200;
 }
 
 
@@ -66,7 +73,7 @@ body{
 	transition: .2s;
 }
 
-label:hover{
+label:hover,a:hover{
 	text-decoration: underline;
 	cursor: pointer
 }
@@ -88,4 +95,57 @@ hr{
 
 h3{
 	color: white;
+}
+
+div#footerContainer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #2A3442;
+}
+
+#footerContent{
+	max-width: 1040px;
+	height: 83px;
+	color: white;
+	padding-top: 20px;
+	margin: auto;
+	font-family: "GothamCondensedLight";
+	font-size: 12px;
+}
+#footerLogo{
+	height: 45px;
+	width: 45px;
+	margin: 0px 10px;
+}
+
+#companyInformation{
+	color: white;
+}
+
+#left{
+	float: left;
+}
+#right{
+	padding: 0px 10px;
+	float: right;
+}
+#linkedIn-logo{
+	margin: 0px 20px 0px 10px;
+	font-size: 18px;
+	background-color: white;
+	color: #2A3442;
+	padding: 5px;
+	border-radius: 5px;
+	position: relative;
+	top: -5px;
+}
+
+#footerGradient{
+	position: fixed;
+	bottom: 0;
+	height: 10px;
+	width: 100%;
+	background: linear-gradient(to right, #9d7341, #c4ab8d);
+	z-index: 2000;
 }
