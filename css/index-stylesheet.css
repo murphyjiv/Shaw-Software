@@ -1,101 +1,8 @@
 /*****************************************************
-                    Base Rules
- *****************************************************/
-
-@font-face {
-    font-family: "NevisBold";
-	src: url('../assets/fonts/nevis.ttf');
-}
-
-@font-face {
-    font-family: "GothamCondensed";
-	src: url('../assets/fonts/gclr.otf');
-}
-
-@font-face {
-  font-family: "GothamBold";
-  src: url("../assets/fonts/gothambold.otf");
-}
-
-
-h1, h2, h3 {
-    font-family: "NevisBold";
-    text-transform: uppercase;
-}
-
-
-h1 {
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 1.1;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-family: "GothamCondensed";
-    font-weight: 500;
-    letter-spacing: .03em;
-}
-
-h5 {
-    font-size: 20px;
-    font-family: "GothamBold";
-}
-
-h6 {
-    font-size: 20px;
-    font-family: "GothamBold";
-    text-transform: uppercase;
-}
-
-p, a {
-    font-family: "GothamBold";
-    line-height: 1.2;
-}
-
-            /* I prefer cursive here.  GothamBold doesn't go below
-                a certain thickness (font-weight: 600) */
-p.description {
-    font-size: 16px;
-}
-
-/* This is a size adjustment to make font sizes responsive
-    starting at the medium screen size*/
-@media(min-width: 768px) {
-    h1 {
-        font-size: 48px;
-    }
-    
-    h2 {
-        font-size: 30px;
-    }
-
-    h5 {
-        font-size: 24px;
-    }
-    
-    p {
-        font-size: 18px;
-    }
-}
-
-/*****************************************************
                     Layout
  *****************************************************/
 
-#header {
-    height: 80vh;
-    min-height: 450px;
-}
-
-#our-expertise-lg-screens {
+#our-expertise {
     margin-bottom: 50px;
 }
 
@@ -103,240 +10,179 @@ p.description {
                     Modules
  *****************************************************/
 
+/**************** Our Expertise Carousel *************/
 
-#header {
-    position: relative;
-}
-
-/* This places the white left-to-right
-    gradient directly over the header image */
-#header-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,.3));
-}
-
-#header-bg-img {
-    /* Flex is required as the parent element of #header-content to vertically center header-content */
-    display: flex;
-    height: 100%;
-    background: url("../assets/images/index/cover.jpg") no-repeat center;
-    background-size: cover;
-}
-
-/* To keep text from taking up the entire screen on 
-    larger screens. */
-#header-content {
-    max-width: 1024px;
-}
-
-/* The border-type line directly below the header image */
-#header-border {
-    height: 10px;
-    width: 100%;
-}
-
-/*****************************************************
-                    Custom Components
- *****************************************************/
-
-
-/******************** Servies Section ****************/
-
-
-        /************ Universals *********/
-
-
-.our-expertise-card-sm, .our-expertise-card-lg {
-    height: 100%;
-    padding: 25px 25px 0 25px;
-    background: white;
-}
-
-[class^="our-expertise-shaded-area"] {
-    height: 100%;
-    background: rgba(255,255,255,0.4);
-    border: 3px solid white;
-}
-
-[class^="our-expertise-card"] h4 {
-    margin-bottom: 40px;
-}
-
-[class^="our-expertise-card"] p {
-    margin-bottom: 50px;
-}
-
-
-        /************ Sm Screens *********/
-
-
-.our-expertise-sm-component {
-    height: 484px;
-    padding: 15px;
-    margin-bottom: 50px;
-}
-
-.our-expertise-card-wrapper-sm {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.our-expertise-sm-component:nth-child(even) .our-expertise-card-wrapper-sm {
-    flex-direction: row-reverse;
-}
-
-@media(min-width: 400px) {
-    .our-expertise-card-sm {
-        padding-top: 50px;
-    }
-}
-
-@media(max-width: 649.98px) {
-    .our-expertise-card-sm {
-        width: 100%;
-    }
-}
-
-@media(min-width: 650px) {
-    .our-expertise-shaded-area-sm {
-        flex: 1;
-    }
-
-    .our-expertise-card-sm {
-        flex: 0 0 440px;
-    }
-}
-
-.btn-theme-button {
-    padding: 10px 30px;
-    background: white;
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid #9d7341;
-}
-
-
-        /************ Lg Screens *********/
-
-
+/* These are the tabs that indicate which slide the
+    carousel is currently on.  This positions them
+    so that they are visible */
 .carousel-indicators {
-    margin-bottom: -4px;
+    margin-bottom: -5px;
 }
 
+/* This is the starting height for the carousel. */
 .carousel-item {
-    height: 484px;
-    margin: 5px;
+    height: 350px;
 }
 
-.our-expertise-card-wrapper-lg {
+/* The bootstrap carousel seemed to position
+    carousel-items' childen elements in a weird way,
+    so this positions card-wrapper evenly inside each
+    carousel-item */
+.our-expertise-card-wrapper {
     position: absolute;
-    width: calc(100% - 33px);
-    height: calc(100% - 25px);
+    width: calc(100% - 30px);
+    height: calc(100% - 27px);
     top: 15px;
     left: 15px;
 }
 
-.our-expertise-shaded-area-lg, .our-expertise-card-lg {
-    width: 50%;
+/* This is the setting for smaller screen sizes that don't
+    have enough room for the shaded box in the carousel */
+.our-expertise-shaded-area {
+    display: none;
+}
+
+/* Base properties for smaller screens.  Positioning is set
+    this way mainly to allow for shaded box to be 
+    positioned left: 0 when it becomes visible at larger
+    screen size */
+.our-expertise-card {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
-}
-
-.our-expertise-shaded-area-lg {
-    left: 0;
-}
-
-.our-expertise-card-lg {
     right: 0;
-    padding-top: 50px;
-    padding-right: 75px;
+    background: rgba(255,255,255,0.8);
+    padding: 15px;
 }
 
+.our-expertise-card h4 {
+    margin-bottom: 25px;
+}
+
+.our-expertise-card p {
+    margin-bottom: 25px;
+}
+
+/* All following media queries are to make each carousel
+    item's content and text display nicely at each
+    screen size. */
+@media(min-width: 450px) {
+    .our-expertise-card {
+        padding: 40px 25px 25px;
+    }
+}
+
+@media(min-width: 576px) {
+    .our-expertise-card p{
+        margin-bottom: 50px;
+    }
+}
+
+@media(min-width: 768px) {
+    .our-expertise-card {
+        padding: 25px 75px 0 100px;
+    }
+}
+
+@media(min-width: 992px) {
+    
+    .carousel-item {
+        height: 480px;
+    }
+    
+    .our-expertise-shaded-area, .our-expertise-card {
+        width: 50%;
+    }
+    
+    .our-expertise-shaded-area {
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255,255,255,0.4);
+        border: 3px solid white;
+    }
+    
+    .our-expertise-card {
+        padding: 60px 75px 60px 35px;
+        background: white;
+    }
+    
+    .our-expertise-card h4 {
+        margin-bottom: 60px;
+    }
+}
+
+/* Prev and next button are not visible until 768px
+    Display flex is how bootstrap positions them */
 .click-icon {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: rgba(42,52,66,1);
+    display: none;
 }
 
-.carousel-control-prev-icon {
-    position: absolute;
-    top: 7px;
-    left: 6px;
-}
+@media(min-width: 768px) {
+    .click-icon {
+        display: flex;
+        position: relative;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(42,52,66,1);
+    }
 
-.carousel-control-next-icon {
-    position: absolute;
-    top: 7px;
-    left: 9px;
+    .carousel-control-prev-icon {
+        position: absolute;
+        top: 7px;
+        left: 6px;
+    }
+
+    .carousel-control-next-icon {
+        position: absolute;
+        top: 7px;
+        left: 9px;
+    }
 }
 
 /******************** Blog Posts ****************/
 
-.blog-post {
-}
-
-.blog-description {
-    height: 350px;
-    border: 1px solid #2a3442;
-    padding: 20px;
+.blog-thumbnail {
     position: relative;
 }
 
-.blog-description a {
+/* This link covers the whole blog card so that it is 
+    all a link to the blog. a::after is necessary here
+    and position: relative for the .btn-theme-button so
+    that the theme button still shows it's hover effects. */
+.blog-thumbnail a:first-child::after {
+    content: '';
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
+/* Height may need adjusted based on future blog posts'
+    text content */
+.blog-description {
+    height: 325px;
+    border: 1px solid #2a3442;
+    padding: 20px;
+}
+
+.blog-description .btn-theme-button {
+    position: relative;
+}
 
 /*****************************************************
                     State
  *****************************************************/
 
-.btn-theme-button {
-    transition: background .3s,
-                padding-right .3s .1s;
+.blog-thumbnail {
+    transition: all .15s;
 }
 
-.btn-theme-button:hover {
-    background: #9d7341;
-    padding-right: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.btn-theme-button span {
-    transition: padding-left .3s .1s;
-}
-
-.btn-theme-button:hover span{
-    padding-left: 10px;
-}
-
-/*****************************************************
-                    Themes
- *****************************************************/
-
-h2, h3, h4, h5, h6, p, a {
-    color: #2a3442;
-}
-
-hr {
-    background: #2a3442;
-}
-
-#header hr {
-    width: 40%;
-    max-width: 450px;
-}
-
-.theme-bg-color-brown {
-    background: linear-gradient(to right, #9d7341, #c4ab8d);
+.blog-thumbnail:hover{
+    transform: scale(1.03);
 }

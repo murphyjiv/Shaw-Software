@@ -1,0 +1,126 @@
+/*****************************************************
+                    Layout
+ *****************************************************/
+
+#in-a-name, #our-mission {
+    margin: 50px auto;
+}
+
+@media(min-width:768px) {
+    #in-a-name,
+    #our-mission {
+        margin: 75px auto;
+    }
+}
+
+@media(max-width:767.98px){
+    #our-members {
+        max-width: 375px;
+    }
+}
+
+#quotes-img-smaller {
+    height: 400px;
+}
+
+#quotes-img {
+    height: 500px;
+}
+
+@media(min-width:1024px) {
+    #quotes-img {
+        height: 600px;
+    }
+}
+
+/*****************************************************
+                    Modules
+ *****************************************************/
+
+/***************** In a Name Section *****************/
+
+
+#our-mission-text {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+
+
+/*************** Members Section *****************/
+
+#our-members h2 {
+    margin: 50px 0 18px;
+}
+
+.member-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.member-card img {
+    position: relative;
+    z-index: 10;
+}
+
+@media(min-width:768px) {
+    .member-card img {
+        height: 250px;
+    }
+}
+
+@media(min-width:992px) {
+    .member-card img {
+        height: 320px;
+    }
+}
+
+@media(min-width:1200px) {
+    .member-card img {
+        height: 400px;
+    }
+}
+
+.off-hover-overlay {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.on-hover-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    text-align: center;
+    background: #EBEBEB;
+}
+
+
+/*****************************************************
+                    State
+ *****************************************************/
+
+.member-card img,
+.off-hover-overlay {
+    transition: opacity .5s,
+                z-index .5s;
+}
+
+.member-card:hover img,
+.member-card:hover .off-hover-overlay {
+    opacity: 0;
+    z-index: 0;
+}
+
+
+
