@@ -20,18 +20,21 @@
 }
 
 #quotes-img-smaller {
-    height: 400px;
+    max-width: 100%;
+    height: auto;
 }
 
 #quotes-img {
-    height: 500px;
+    height: 450px;
 }
 
-@media(min-width:1024px) {
+@media(min-width:1100px) {
     #quotes-img {
         height: 600px;
     }
 }
+
+
 
 /*****************************************************
                     Modules
