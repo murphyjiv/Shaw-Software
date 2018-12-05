@@ -1,45 +1,72 @@
-section#our-partners{
-	margin: 0 auto;
-	margin-top: 160px;
+ section#our-partners{
+	margin: 30px auto 30px auto;
+	padding: 0px 25px;
 	max-width: 1070px;
 
 }
-div.row{
-	margin: 0 auto
-}
+
 div.partner-container{
-	max-width: 356px;
-	margin: 0 auto;
-	padding: 0;
+	margin: 40px auto;
+	padding: 0px 25px;
 }
-div.partner-container div.partner-logo-container{
-	max-width: 327px;
-	min-height: 100px;
-	margin:  0 auto;
-	padding: 0px 15px;
+
+div.partner-container *{
+	margin: 0 auto !important;
+}
+
+div.partner-container *:nth-child(n+2){
+	margin-top: 30px !important;
+}
+
+div.partner-logo-container {
+	display: flex;
+	margin: auto;
+	width: 100%;
+}
+
+.img-fluid{
 	display: block;
+	max-width: 95%;
+	max-height: 130px;
+	height: auto;
+	width: auto;
 }
 
-
-
-div.partner-container h3{
-	margin: 40px 0px 55px 0px !important;
+div.partner-container h3.partner-name{
 	text-align: center;
 }
-div.partner-container p{
-	text-align: left;
+
+div.partner-description-container p{
 	font-size: 14px;
-	font-family: "GothamBold"
-}
-div.partner-container a{
-	max-width: 162px !important;
-	max-height: 42px !important;
-	margin-top: 46px;
-}
-div.partner-container span{
-	font-size: 14px;
-	position: relative;
-	top: -8px;
 }
 
+
+@media only screen and (min-width: 992px) {
+	section#our-partners{
+	    	margin: 75px auto 75px auto;
+	    	padding: 0px 25px;
+	    	max-width: 1070px;
+    }
+	section#our-partners div.row:first-child{
+		margin-bottom: 40px;
+	}
+	div.partner-container{
+		margin: 0 auto;
+		padding: 0px 15px;
+	}
+    div.row:first-child div.partner-description-container{
+	    min-height: 160px;
+    }
+    #sungaurdAS-container{
+	    position: relative;
+	    top: 1px;
+    }
+    #servicenow-container{
+	    position: relative;
+	    top: 42px;
+    }
+    #whistic-container{
+	    position: relative;
+	    top: 22px;
+    }
 }
