@@ -1,0 +1,45 @@
+section#our-partners{
+	margin: 0 auto;
+	margin-top: 160px;
+	max-width: 1070px;
+
+}
+div.row{
+	margin: 0 auto
+}
+div.partner-container{
+	max-width: 356px;
+	margin: 0 auto;
+	padding: 0;
+}
+div.partner-container div.partner-logo-container{
+	max-width: 327px;
+	min-height: 100px;
+	margin:  0 auto;
+	padding: 0px 15px;
+	display: block;
+}
+
+
+
+div.partner-container h3{
+	margin: 40px 0px 55px 0px !important;
+	text-align: center;
+}
+div.partner-container p{
+	text-align: left;
+	font-size: 14px;
+	font-family: "GothamBold"
+}
+div.partner-container a{
+	max-width: 162px !important;
+	max-height: 42px !important;
+	margin-top: 46px;
+}
+div.partner-container span{
+	font-size: 14px;
+	position: relative;
+	top: -8px;
+}
+
+}
