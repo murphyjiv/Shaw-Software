@@ -12,6 +12,7 @@
 	width: 100;
 	transition: .3s;
 	background-color: #2A3442;
+	z-index: 200;
 }
 
 .bg-dark{
@@ -37,7 +38,7 @@
 	color: white;
 }
 
-#contact-btn{
+#contact-link-btn{
 	border: none;
 	background-color: transparent;
 }
@@ -84,7 +85,7 @@
 		font-size: 14px;
 	}
 
-	#contact-btn{
+	#contact-link-btn{
 		border: 2px solid white;
 		border-radius: 0;
 		padding: 0px 10px 5px 10px;
@@ -92,14 +93,14 @@
 		position: relative;
 		top: -3px;
 	}
-	#contact-btn span{
+	#contact-link-btn span{
 		position: relative;
 		top:1px;
 	}
-	#contact-btn:hover{
+	#contact-link-btn:hover{
 		background-color: white;
 	}
-	#contact-btn:hover span{
+	#contact-link-btn:hover span{
 		color: #9d7341;
 	}
 	.fancyHR{
