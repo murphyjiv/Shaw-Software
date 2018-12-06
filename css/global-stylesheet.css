@@ -65,6 +65,10 @@ p, a {
     line-height: 1.2;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /* I prefer cursive here.  GothamBold doesn't go below
     a certain thickness (font-weight: 600) */
 p.description {

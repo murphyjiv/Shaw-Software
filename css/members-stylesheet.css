@@ -1,0 +1,47 @@
+
+.member-photo {
+    position: relative;
+    display: flex;
+}
+
+.member-photo img {
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Fix so his head isn't cropped off */
+#brian-bailey {
+    height: 400px;
+}
+
+@media(min-width: 992px) {
+
+    .member-photo img {
+        width: 100%;
+        height: 420px;
+    }
+    
+    #brian-bailey {
+        height: 380px;
+    }
+}
+
+.hr-color {
+    background:#9d7341;
+}
+
+/************* Member Links **************/
+
+[class*="member"] {
+    color: #9d7341;
+}
+
+.current-member {
+    opacity: 0.6;
+}
+
+.member-link:hover span {
+    border-bottom: 2px solid;
+}
