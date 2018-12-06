@@ -2,6 +2,12 @@
                     Layout
  *****************************************************/
 
+#header {
+    height: 80vh;
+    min-height: 450px;
+    max-height: 700px;
+}
+
 #our-expertise {
     margin-bottom: 50px;
 }
