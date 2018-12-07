@@ -155,32 +155,36 @@
 	color: white;
 	padding-top: 20px;
 	margin: auto;
-	font-family: "GothamCondensedLight";
 }
+
+
 #footerLogo{
 	height: 45px;
 	width: 45px;
 	margin: 0px 10px;
 }
 
-#left{
-	float: left;
+#header-left-p,#header-right-p{
+	color: white !important;
+	font-family: "GothamCondensedLight";
+	font-size: 14px;
 }
-#right{
-	padding: 0px 10px;
-	float: right;
-	position: relative;
-	top: 5px;
+
+#header-right-p{
 	text-align: right;
+	position: relative;
+
 }
+
 #linkedIn-logo{
 	margin: 0px 20px 0px 10px;
 	font-size: 18px;
 	background-color: white;
 	color: #2A3442;
-	padding: 3px;
+	padding: 3px !important;
 	border-radius: 5px;
 	vertical-align: text-bottom;
+	min-width: 12px;
 }
 
 #footerGradient{
