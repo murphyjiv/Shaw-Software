@@ -30,12 +30,19 @@
 }
 
 #subheader a {
+    padding: 5px 0;
     color: white;
 }
 
-#subheader a:not(.current-service) {
+/* .subpage targets all service subpages but not the main
+    services page.  This makes all links, other than the
+    one to the active page, a lesser opacity so that the
+    user can easily tell which page they are on */
+#subheader.subpage a:not(.current-service),
+#subheader.subpage h5 {
     color: rgba(255,255,255,.6);
 }
+
 
 /******************** Servies Section ****************/
 
@@ -117,6 +124,6 @@
                         State
  *****************************************************/
 
-#subheader a:hover {
+#subheader.subpage a:not(.current-service):hover {
     text-decoration: underline;
 }
