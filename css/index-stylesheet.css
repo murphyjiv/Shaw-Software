@@ -21,12 +21,12 @@
 /* These are the tabs that indicate which slide the
     carousel is currently on.  This positions them
     so that they are visible */
-.carousel-indicators {
+#our-expertise .carousel-indicators {
     margin-bottom: -5px;
 }
 
 /* This is the starting height for the carousel. */
-.carousel-item {
+#our-expertise .carousel-item {
     height: 350px;
 }
 
@@ -93,7 +93,7 @@
 
 @media(min-width: 992px) {
     
-    .carousel-item {
+    #our-expertise .carousel-item {
         height: 480px;
     }
     
@@ -137,13 +137,13 @@
         background: rgba(42,52,66,1);
     }
 
-    .carousel-control-prev-icon {
+    #our-expertise .carousel-control-prev-icon {
         position: absolute;
         top: 7px;
         left: 6px;
     }
 
-    .carousel-control-next-icon {
+    #our-expertise .carousel-control-next-icon {
         position: absolute;
         top: 7px;
         left: 9px;

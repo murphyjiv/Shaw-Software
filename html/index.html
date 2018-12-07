@@ -193,31 +193,72 @@
 		 		<hr>
 			</div>
 
-            	<section id="blog-posts" class="container mb-5">
-                	<div class="row">
-                    	<div class="blog-thumbnail col-xs-12 col-md-6 col-xl-4 mb-5">
-						<img class="w-100" src="../assets/images/index/blog-thumbnail.jpg" alt="Man holding compass">
-						<div class="blog-description">
-                            		<a href="#"></a>
-                            		<h6>How to Answer Vendor Questionnaires from Pospects And Clients</h6>
-                            		<p class="description mt-3 mb-5">Companies that are subject to regulation and that have mature information security, privacy, and risk management programs send questionnaires to...</p>
-                            		<a href="blog-posts/how-to-answer-vendor-questionnaires.html" class="btn-theme-button">Read More&nbsp;&nbsp;<span>&gt;</span></a>
-                            	</div>
-                    	</div>
+            <section id="blog-posts" class="container mb-5">
+                <div class="row">
+                    <div class="blog-thumbnail col-xs-12 col-md-6 col-xl-4 mb-5">
+                    <img class="w-100" src="../assets/images/index/blog-thumbnail.jpg" alt="Man holding compass">
+                    <div class="blog-description">
+                                <a href="#"></a>
+                                <h6>How to Answer Vendor Questionnaires from Pospects And Clients</h6>
+                                <p class="description mt-3 mb-5">Companies that are subject to regulation and that have mature information security, privacy, and risk management programs send questionnaires to...</p>
+                                <a href="blog-posts/how-to-answer-vendor-questionnaires.html" class="btn-theme-button">Read More&nbsp;&nbsp;<span>&gt;</span></a>
+                            </div>
+                    </div>
 <!-- Template for another blog post -->
 <!-- Delete class ".d-none" to use -->
 <!-- .blog-description may need height adjustment if text content is greater than previous thumbnails -->
-	                    <div class="d-none blog-thumbnail col-xs-12 col-md-6 col-xl-4 mb-5">
-	                        <img class="w-100" src="../assets/images/index/blog-thumbnail.jpg" alt="Man holding compass">
-	                        <div class="blog-description">
-	                            <a href="#"></a>
-	                            <h6>How to Answer Vendor Questionnaires from Pospects And Clients</h6>
-	                            <p class="description mt-3 mb-5">Companies that are subject to regulation and that have mature information security, privacy, and risk management programs send questionnaires to...</p>
-	                            <a href="blog-posts/how-to-answer-vendor-questionnaires.html" class="btn-theme-button">Read More&nbsp;&nbsp;<span>&gt;</span></a>
-	                            </div>
-	                    </div>
-                	</div>
-            	</section>
+                    <div class="d-none blog-thumbnail col-xs-12 col-md-6 col-xl-4 mb-5">
+                        <img class="w-100" src="../assets/images/index/blog-thumbnail.jpg" alt="Man holding compass">
+                        <div class="blog-description">
+                            <a href="#"></a>
+                            <h6>How to Answer Vendor Questionnaires from Pospects And Clients</h6>
+                            <p class="description mt-3 mb-5">Companies that are subject to regulation and that have mature information security, privacy, and risk management programs send questionnaires to...</p>
+                            <a href="blog-posts/how-to-answer-vendor-questionnaires.html" class="btn-theme-button">Read More&nbsp;&nbsp;<span>&gt;</span></a>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="quotes" class="w-100">
+                <div id="quotes-carousel-wrapper" class="container">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="7000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="quote">
+                                    <p>SHAW’s experienced team of Information Security professionals brought new insights to our organization and moved our GRC program to the next level.</p>
+                                    <p>- Dan, <em>Senior Director GRC</em></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote">
+                                    <p>Extremely knowledgeable consultants who bring their hands-on experience to our team and offer insight to help us deploy the necessary controls.</p>
+                                    <p>- Peter, <em>Sr. Director Information Technology &amp; Infrastructure</em></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote">
+                                    <p>SHAW automated our vendor risk management  program and cut weeks out of our process. Project delivery was timely and exactly what they designed. SHAW is our new ‘go-to’ partner for all of our SecOps and GRC needs.</p>
+                                    <p>- Jane, <em>Chief Information Security Officer</em></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote">
+                                    <p>Honest, focused and to-the-point. SHAW delivered the message in a way that was easy for me to understand and provided clear options to meet my near-term objectives.</p>
+                                    <p>- Martin, <em>President Operations, UK &amp; Asia</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
 	   <!-- =================================================================== -->
 		 <!-- FOOTER -->
@@ -254,17 +295,7 @@
 	   <!-- ****Needs to be moved to custom JS in section below?*** -->
 	   <!-- =================================================================== -->
 
-		<!--  The following script is a free jQuery plugin to make bootstrap's carousel swipable for touch screens
-		Link for full plugin: https://www.jqueryscript.net/plus/search.php?keyword=om/ardeshireshghi       -->
-			<!--  These two lines of code initiate the plugin   -->
-            <script>
-                const carouselEl = $('#carouselIndicators');
-
-                // Bootstrap carousel needs to be loaded first
-                carouselEl.carousel().swipeCarousel({
-                 sensitivity: 'high' // low, medium or high
-                });
-            </script>
+            
 
 
            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -275,6 +306,11 @@
          <script src="../js/parallax.min.js"></script>
 		 <script src="../js/header-script.js"></script>
         
+        <!--  The following script is a free jQuery plugin to make bootstrap's carousel swipable for touch screens
+        Link for full plugin: https://www.jqueryscript.net/plus/search.php?keyword=om/ardeshireshghi       -->
+        <!--  The last two lines of code initiate the plugin   -->
+        <!--  This script MUST come after the jquery script -->
+        <script src="../js/bootstrap-swipe-carousel.min.js"></script>
         </div>
     </body>
 </html>
