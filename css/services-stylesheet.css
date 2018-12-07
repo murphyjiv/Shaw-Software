@@ -16,36 +16,30 @@
     margin-top: 10px;
     padding: 25px 0;
     text-align: center;
-    background: #5C6B80;
-    color: white;
+    background: #5C6B80; /* a shade of blue-gray */
+    color: white; /* needed to make the link dividers white */
 }
 
+/* Formats the links nicely on xl-screens */
 #subheader .col {
-    max-width: 1200px;
+    max-width: 1350px;
 }
 
-#services-intro img {
-    width: 100%;
-    height: auto;
-}
 
 #subheader a {
-    padding: 5px 0;
+    padding: 5px 0; /* gives more vertical click space */
     color: white;
 }
 
-/* .subpage targets all service subpages but not the main
-    services page.  This makes all links, other than the
-    one to the active page, a lesser opacity so that the
-    user can easily tell which page they are on */
-#subheader.subpage a:not(.current-service),
-#subheader.subpage h5 {
-    color: rgba(255,255,255,.6);
+#subheader a:hover {
+    text-decoration: underline;
 }
-
 
 /******************** Servies Section ****************/
 
+/* lots of intricate changes at different break points
+    to make sure that the components look good at
+    all sizes */
 #our-expertise .col {
     max-width: 992px;
     margin: 50px auto;
@@ -62,6 +56,7 @@
     height: 100%;
 }
 
+/* "Flips" alternating cards */
 .our-expertise-background:nth-child(even) .our-expertise-card-wrapper {
     flex-direction: row-reverse;
 }
@@ -71,7 +66,6 @@
     padding: 25px;
     background: white;
 }
-
 
 .our-expertise-shaded-area {
     height: 100%;
@@ -118,12 +112,4 @@
 .our-expertise-card h4,
 .our-expertise-card p {
     margin-bottom: 40px;
-}
-
-/*****************************************************
-                        State
- *****************************************************/
-
-#subheader.subpage a:not(.current-service):hover {
-    text-decoration: underline;
 }

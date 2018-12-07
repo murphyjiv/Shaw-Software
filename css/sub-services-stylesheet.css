@@ -1,0 +1,44 @@
+#header {
+    height: 450px;
+}
+
+/*****************************************************
+                    Modules
+ *****************************************************/
+
+/************** Subheader - link Section *************/
+
+#subheader {
+    margin-top: 10px;
+    padding: 25px 0;
+    text-align: center;
+    background: #5C6B80; /* a shade of blue-gray */
+}
+
+/* Formats the links nicely on xl-screens */
+#subheader .col {
+    max-width: 1350px;
+}
+
+/* Gives a little more vertical clicking space */
+#subheader a {
+    padding: 5px 0;
+}
+
+/* These next two selector make all links, other than the
+one to the active page, a lesser opacity so that the user can
+easily tell which page they are on */
+
+#subheader,
+#subheader a {
+    color: rgba(255,255,255,.6);
+}
+
+#subheader .current-service {
+    color: white;
+}
+
+/* Underlines any links execpt for the active page */
+#subheader a:not(.current-service):hover {
+    text-decoration: underline;
+}
