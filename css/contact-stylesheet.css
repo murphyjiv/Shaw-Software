@@ -41,7 +41,7 @@ form input{
 }
 
 form input:hover{
-	box-shadow: 2px 2px 2px 2px grey;
+	box-shadow: 3px 3px 3px 3px #E8E8E8;
 }
 
 form input#submit-btn:hover{
