@@ -15,6 +15,10 @@
 /*****************************************************
                     Modules
  *****************************************************/
+.shaw-services a{
+	font-size: 16px !important
+}
+
 
 /**************** Our Expertise Carousel *************/
 
@@ -49,7 +53,7 @@
 }
 
 /* Base properties for smaller screens.  Positioning is set
-    this way mainly to allow for shaded box to be 
+    this way mainly to allow for shaded box to be
     positioned left: 0 when it becomes visible at larger
     screen size */
 .our-expertise-card {
@@ -92,15 +96,15 @@
 }
 
 @media(min-width: 992px) {
-    
+
     #our-expertise .carousel-item {
         height: 480px;
     }
-    
+
     .our-expertise-shaded-area, .our-expertise-card {
         width: 50%;
     }
-    
+
     .our-expertise-shaded-area {
         display: block;
         position: absolute;
@@ -110,12 +114,12 @@
         background: rgba(255,255,255,0.4);
         border: 3px solid white;
     }
-    
+
     .our-expertise-card {
         padding: 60px 75px 60px 35px;
         background: white;
     }
-    
+
     .our-expertise-card h4 {
         margin-bottom: 60px;
     }
@@ -156,7 +160,7 @@
     position: relative;
 }
 
-/* This link covers the whole blog card so that it is 
+/* This link covers the whole blog card so that it is
     all a link to the blog. a::after is necessary here
     and position: relative for the .btn-theme-button so
     that the theme button still shows it's hover effects. */
@@ -184,7 +188,10 @@
 /*****************************************************
                     State
  *****************************************************/
-
+.shaw-services a:hover{
+	text-decoration: underline;
+	color: #2A3442;
+}
 .blog-thumbnail {
     transition: all .15s;
 }
