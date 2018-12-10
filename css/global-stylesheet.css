@@ -75,7 +75,7 @@ p.description {
     font-size: 16px;
 }
 
-/* This is a size adjustment to make font sizes 
+/* This is a size adjustment to make font sizes
 responsive starting at the medium screen size */
 @media(min-width: 768px) {
     h1 {
@@ -320,14 +320,14 @@ responsive starting at the medium screen size */
 
   #header-left-p,#header-right-p{
   	color: white !important;
-  	font-family: "GothamCondensedLight";
+  	font-family: "GothamCondensed";
   	font-size: 14px;
   }
 
   #header-right-p{
   	text-align: right;
   	position: relative;
-
+	top: 5px;
   }
 
   #linkedIn-logo{
@@ -406,5 +406,3 @@ hr {
 .theme-bg-color-brown {
     background: linear-gradient(to right, #9d7341, #c4ab8d);
 }
-
-
