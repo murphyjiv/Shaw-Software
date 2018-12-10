@@ -78,13 +78,13 @@
 				<br>
 				<p>Interested in learning more about us? Submit an inquiry today and
 					someone from the SHAW Software will get back to you as quickly as possible.</p>
-					<form name="insightly_web_to_lead" action="https://si8aeb7c.insight.ly/WebToLead/Create" method="post">
+					<form name="insightly_web_to_lead" action="https://si8aeb7c.insight.ly/WebToLead/Create" method="post" novalidate>
 						<input type="hidden" name="formId" value="N6HN9N110kAZK8Mh8buhkw==">
 							<label for="insightly_firstName">First Name: </label>
-							<input id="insightly_firstName" name="FirstName" type="text" placeholder="First Name">
+							<input id="insightly_firstName" name="FirstName" type="text" placeholder="First Name" required>
 						<br>
 							<label for="insightly_lastName">Last Name: </label>
-							<input id="insightly_lastName" name="LastName" type="text" placeholder="Last Name">
+							<input id="insightly_lastName" name="LastName" type="text" placeholder="Last Name" required>
 						<br>
 							<label for="insightly_title">Title: </label>
 							<input id="insightly_Title" name="Title" type="text" placeholder="Title">
@@ -100,53 +100,102 @@
 						<br>
 							<input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="1432864">
 							<input type="hidden" id="insightly_LeadSource" name="LeadSource" value="1999905">
-						<input type="submit" value="Submit" class="btn-theme-button mx-auto" id="submit-btn">
+						<input type="submit" value="SUBMIT" id="submit-btn">
+                        <div id="validation-modal">
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <p class="text-center"><em>While we prefer that you fill out the form completely, we at least ask that you provide your first name, last name, and one contact method.</em></p>
+                        </div>
 					</form>
-			</div><!-- End of form div -->
+                
+                </div><!-- End of form div -->
 
-			<div class="company-info-container col-lg-6">
-				<!-- Google Map Link to Office Address -->
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.836815687893!2d-71.46888684880777!3d42.431208238495515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e391f00c208a9b%3A0x91ced46bbe5812de!2s6+Mill+St%2C+Maynard%2C+MA+01754!5e0!3m2!1sen!2sus!4v1536614786762"  frameborder="0"  allowfullscreen=""></iframe>
-				<!-- Contact Information -->
-				<h6>office</h6>
-				<br>
-				<p>6 Mill & Main</p>
-				<p>Suite 300</p>
-				<p>Maynard, MA 01754</p>
-				<hr>
-				<p>978.254.6003</p>
-			</div>
+                <div class="company-info-container col-lg-6 mb-5 mb-lg-0">
+                    <!-- Google Map Link to Office Address -->
+                    <iframe class="my-5 mt-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.836815687893!2d-71.46888684880777!3d42.431208238495515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e391f00c208a9b%3A0x91ced46bbe5812de!2s6+Mill+St%2C+Maynard%2C+MA+01754!5e0!3m2!1sen!2sus!4v1536614786762"  frameborder="0"  allowfullscreen=""></iframe>
+                    <!-- Contact Information -->
+                    <h6>office</h6>
+                    <br>
+                    <p>6 Mill &amp; Main</p>
+                    <p>Suite 300</p>
+                    <p>Maynard, MA 01754</p>
+                    <hr>
+                    <p>978.254.6003</p>
+                </div>
 	    	</section> <!-- End of #contact-content -->
+<!--    Quotes Section  -->
+            
+            <section id="quotes" class="w-100">
+                <div id="quotes-carousel-wrapper" class="container">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="7000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="quote">
+                                    <p><q> SHAW’s experienced team of Information Security professionals brought new insights to our organization and moved our GRC program to the next level. </q></p>
+                                    <p>- Dan, <em>Senior Director GRC</em></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote">
+                                    <img src="../assets/images/all-pages/quotes.png">
+                                    <p>Extremely knowledgeable consultants who bring their hands-on experience to our team and offer insight to help us deploy the necessary controls.</p>
+                                    <p>- Peter, <em>Sr. Director Information Technology &amp; Infrastructure</em></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote">
+                                    <p>SHAW automated our vendor risk management  program and cut weeks out of our process. Project delivery was timely and exactly what they designed. SHAW is our new ‘go-to’ partner for all of our SecOps and GRC needs.</p>
+                                    <p>- Jane, <em>Chief Information Security Officer</em></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote">
+                                    <p>Honest, focused and to-the-point. SHAW delivered the message in a way that was easy for me to understand and provided clear options to meet my near-term objectives.</p>
+                                    <p>- Martin, <em>President Operations, UK &amp; Asia</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
+	   <!-- =================================================================== -->
+		 <!-- FOOTER -->
+	   <!-- =================================================================== -->
+        <div id="footerContainer" >
+            <div id="footerContent" class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="header-left-p">
+                            <a href="index.html">
+                                <img id="footerLogo" src="../assets/images/all-pages/footer-logo.png">
+                            </a>
+                            6 Mill &amp; Main, Ste 300. Maynard, MA 01754 | 978.254.6003
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p id="header-right-p">
+                            Connect:
+                            <a href="https://www.linkedin.com/company/shawsoftware/">
+                                <i id="linkedIn-logo" class="fa fa-linkedin"></i>
+                            </a>
+                            @Shaw Software 2018
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <span id="footerGradient"></span>
+        </div>
     </div> <!-- End of body wrapper -->
-
-	<!-- =================================================================== -->
-	   <!-- FOOTER -->
-	<!-- =================================================================== -->
-   	<div id="footerContainer" >
-		<div id="footerContent" class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<p id="header-left-p">
-						<a href="index.html">
-							<img id="footerLogo" src="../assets/images/all-pages/footer-logo.png">
-						</a>
-						6 Mill & Main, Ste 300. Maynard, MA 01754 | 978.254.6003
-					</p>
-				</div>
-				<div class="col-md-6">
-					<p id="header-right-p">
-						Connect:
-						<a href="https://www.linkedin.com/company/shawsoftware/">
-							<i id="linkedIn-logo" class="fa fa-linkedin"></i>
-						</a>
-						@Shaw Software 2018
-					</p>
-				</div>
-			</div>
-		</div>
-		<span id="footerGradient"></span>
-	</div>
 
 	<!-- =================================================================== -->
 	<!-- JS -->
@@ -157,6 +206,7 @@
 		<!--   Custom JS   -->
 		<script src="../js/parallax.min.js"></script>
 		<script src="../js/header-script.js"></script>
+        <script src="../js/contact-form-validation.js"></script>
 
     </body>
 </html>

@@ -2,53 +2,81 @@
     height: 400px;
 }
 
-#contact-content{
-	margin: 80px auto !important;
+#contact-content {
+	margin: 75px auto 75px;
 	padding: 0px 30px;
 	max-width: 1140px;
+    text-align: center;
 }
 
-#contact-content div.form-container{
-	margin-bottom: 80px;
+#contact-content form {
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
 }
 
-#contact-content p{
-	font-size: 14px;
+#contact-content hr {
+    max-width: 250px;
 }
 
 div.company-info-container iframe{
 	width: 100%;
 	height: 50%;
-	margin-bottom: 20px;
 }
 
 form label{
 	display: none;
 }
 
-form input{
+form input {
 	border: 1px solid #2a3442;
 	font-family: "GothamBold" !important;
-	font-size: 12px !important;
-	color: #2A3442 !important;
-	min-width: 400px;
+	color: #2A3442;
+	width: 100%;
 	min-height: 40px;
-	margin: 15px auto;
+	margin: 5px auto;
 	border-radius: 5px;
 	transition: .2s;
 	padding: 0px 15px;
-
 }
 
-form input:hover{
+form input:not(#submit-btn):hover {
 	box-shadow: 3px 3px 3px 3px #E8E8E8;
 }
 
-form input#submit-btn:hover{
+form #submit-btn:hover{
 	cursor: pointer;
 }
-form input#submit-btn{
-	position: absolute;
-	bottom: -15;
-	left: 20;
+
+form #submit-btn{
+    font-size: 14px;
+    background: white;
+    border: 2px solid #9d7341;
+    transition: background .3s;
+}
+
+form #submit-btn:hover {
+    color: white;
+    background: #9d7341;
+}
+
+@media(min-width: 768px) {
+    form input {
+        margin: 10px auto;
+    }
+}
+
+/****   Validation Modal  ****/
+
+#validation-modal {
+    position: absolute;
+    bottom: 0;
+    left: -1000px;
+    height: 125px;
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    transition: left 1s ease-out;
 }
