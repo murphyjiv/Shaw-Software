@@ -110,6 +110,113 @@ responsive starting at the medium screen size */
                     Modules
  *****************************************************/
 
+/****************  Navbar *******************/
+
+#navContainer{
+	max-height: 310px;
+	width: 100%;
+	transition: .3s;
+	background-color: #2A3442;
+	z-index: 200;
+    position: fixed;
+}
+
+.bg-dark{
+	background-color: #2A3442 !important;
+}
+#companyLogo{
+	height: 30px;
+	width: 75px;
+	margin-left: 15px;
+}
+
+.navbar-nav li{
+	text-align: center;
+}
+
+.nav-link-txt{
+	color: #9d7341;
+	font-family: "GothamBold";
+	font-size: 20px;
+}
+
+.nav-link-txt:hover{
+	color: white;
+}
+
+#contact-link-btn{
+	border: none;
+	background-color: transparent;
+}
+
+.fancyHR{
+	display: none;
+}
+
+
+@media only screen and (min-width: 767px) {
+	#navContainer{
+		height: 90px;
+		width: 100%;
+		background-color: transparent;
+	}
+	.bg-dark{
+		background-color: transparent !important;
+	}
+	.navbar{
+		max-width: 1040px;
+		height: 90px;
+		margin: auto;
+		padding: 0;
+	}
+	#companyLogo{
+		position: relative;
+		margin-left: 0;
+		top: -4px;
+		width: 150px;
+		height: 55px;
+	}
+	a.nav-link{
+		padding: 0 !important;
+		margin-left: 25px;
+		position: relative;
+		top: 7px;
+	}
+	a.nav-link:hover{
+		text-decoration: underline;
+	}
+	.nav-link-txt{
+		color: white;
+		font-size: 14px;
+	}
+
+	#contact-link-btn{
+		border: 2px solid white;
+		border-radius: 0;
+		padding: 0px 10px 5px 10px;
+		background-color: transparent;
+		position: relative;
+		top: -3px;
+	}
+	#contact-link-btn span{
+		position: relative;
+		top:1px;
+	}
+	#contact-link-btn:hover{
+		background-color: white;
+	}
+	#contact-link-btn:hover span{
+		color: #9d7341;
+	}
+	.fancyHR{
+		display: block;
+		border-top: 1px solid #9A9A9A;
+		position: relative;
+		top: -25px;
+		max-width: 1040px;
+	}
+}
+
 /*******************   Header   ****************/
 
 #header {
@@ -149,6 +256,98 @@ responsive starting at the medium screen size */
     height: 10px;
     width: 100%;
 }
+
+/*************  Quote Section   *****************/
+
+#quotes {
+    background: #2A3442;
+    margin: 35px 0;
+}
+
+#quotes p {
+    color: white;
+}
+
+#quotes .carousel-item {
+    height: 300px;
+}
+
+.quote {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quote img {
+    width: 20px;
+    margin: 0 auto 10px;
+}
+
+.quote p:last-child {
+    font-family: "GothamCondensed";
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+ /*****************   Footer    *****************/
+
+  #footerContainer{
+  	display: block;
+  	width: 100%;
+  	background: #2A3442;
+  	min-height: 83px;
+  }
+
+  #footerContent{
+  	max-width: 1040px;
+  	min-height: 83px;
+  	color: white;
+  	padding-top: 20px;
+  	margin: auto;
+  }
+
+
+  #footerLogo{
+  	height: 45px;
+  	width: 45px;
+  	margin: 0px 10px;
+  }
+
+  #header-left-p,#header-right-p{
+  	color: white !important;
+  	font-family: "GothamCondensedLight";
+  	font-size: 14px;
+  }
+
+  #header-right-p{
+  	text-align: right;
+  	position: relative;
+
+  }
+
+  #linkedIn-logo{
+  	margin: 0px 20px 0px 10px;
+  	font-size: 18px;
+  	background-color: white;
+  	color: #2A3442;
+  	padding: 3px !important;
+  	border-radius: 5px;
+  	vertical-align: text-bottom;
+  	min-width: 12px;
+  }
+
+  #footerGradient{
+  	display: block;
+  	height: 10px;
+  	width: 100%;
+  	background: linear-gradient(to right, #9d7341, #c4ab8d);
+  	z-index: 2000;
+  }
 
 /******************** Theme Button ****************/
 
@@ -208,204 +407,4 @@ hr {
     background: linear-gradient(to right, #9d7341, #c4ab8d);
 }
 
-/*****************************************************
-                    Header
- *****************************************************/
-#navContainer{
-	max-height: 310px;
-	width: 100;
-	transition: .3s;
-	background-color: #2A3442;
-	z-index: 200;
-}
 
-.bg-dark{
-	background-color: #2A3442 !important;
-}
-#companyLogo{
-	height: 30px;
-	width: 75px;
-	margin-left: 15px;
-}
-
-.navbar-nav li{
-	text-align: center;
-}
-
-.nav-link-txt{
-	color: #9d7341;
-	font-family: "GothamBold";
-	font-size: 20px;
-}
-
-.nav-link-txt:hover{
-	color: white;
-}
-
-#contact-link-btn{
-	border: none;
-	background-color: transparent;
-}
-
-.fancyHR{
-	display: none;
-}
-
-
-@media only screen and (min-width: 767px) {
-	#navContainer{
-		height: 90px;
-		position:fixed;
-		width: 100%;
-		background-color: #2A3442;
-	}
-	.bg-dark{
-		background-color: transparent !important;
-	}
-	.navbar{
-		max-width: 1040px;
-		height: 90px;
-		margin: auto;
-		padding: 0;
-	}
-	#companyLogo{
-		position: relative;
-		margin-left: 0;
-		top: -4px;
-		width: 150px;
-		height: 55px;
-	}
-	a.nav-link{
-		padding: 0 !important;
-		margin-left: 25px;
-		position: relative;
-		top: 7px;
-	}
-	a.nav-link:hover{
-		text-decoration: underline;
-	}
-	.nav-link-txt{
-		color: white;
-		font-size: 14px;
-	}
-
-	#contact-link-btn{
-		border: 2px solid white;
-		border-radius: 0;
-		padding: 0px 10px 5px 10px;
-		background-color: transparent;
-		position: relative;
-		top: -3px;
-	}
-	#contact-link-btn span{
-		position: relative;
-		top:1px;
-	}
-	#contact-link-btn:hover{
-		background-color: white;
-	}
-	#contact-link-btn:hover span{
-		color: #9d7341;
-	}
-	.fancyHR{
-		display: block;
-		border-top: 1px solid #9A9A9A;
-		position: relative;
-		top: -25px;
-		max-width: 1040px;
-	}
-}
-/*****************************************************
-                    Quote Section
- *****************************************************/
-
-#quotes {
-    background: #2A3442;
-    margin: 35px 0;
-}
-
-#quotes p {
-    color: white;
-}
-
-#quotes .carousel-item {
-    height: 300px;
-}
-
-.quote {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.quote img {
-    width: 20px;
-    margin: 0 auto 10px;
-}
-
-.quote p:last-child {
-    font-family: "GothamCondensed";
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-
- /*****************************************************
-                     Footer
-  *****************************************************/
-  #footerContainer{
-  	display: block;
-  	width: 100%;
-  	background: #2A3442;
-  	min-height: 83px;
-  }
-
-  #footerContent{
-  	max-width: 1040px;
-  	min-height: 83px;
-  	color: white;
-  	padding-top: 20px;
-  	margin: auto;
-  }
-
-
-  #footerLogo{
-  	height: 45px;
-  	width: 45px;
-  	margin: 0px 10px;
-  }
-
-  #header-left-p,#header-right-p{
-  	color: white !important;
-  	font-family: "GothamCondensedLight";
-  	font-size: 14px;
-  }
-
-  #header-right-p{
-  	text-align: right;
-  	position: relative;
-
-  }
-
-  #linkedIn-logo{
-  	margin: 0px 20px 0px 10px;
-  	font-size: 18px;
-  	background-color: white;
-  	color: #2A3442;
-  	padding: 3px !important;
-  	border-radius: 5px;
-  	vertical-align: text-bottom;
-  	min-width: 12px;
-  }
-
-  #footerGradient{
-  	display: block;
-  	height: 10px;
-  	width: 100%;
-  	background: linear-gradient(to right, #9d7341, #c4ab8d);
-  	z-index: 2000;
-  }
