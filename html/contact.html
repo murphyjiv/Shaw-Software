@@ -75,29 +75,33 @@
 		<section id="contact-content" class="row">
 			<div class="form-container col-lg-6">
 				<h3>Get in touch</h3>
+				<br>
 				<p>Interested in learning more about us? Submit an inquiry today and
 					someone from the SHAW Software will get back to you as quickly as possible.</p>
-				<form action="/action_page.php">
-			     	<div class="form-group">
-				     	<input type="text" class="form-control" id="text" placeholder="First Name" name="email">
-				     </div>
-				    	<div class="form-group">
-				      	<input type="text" class="form-control" id="text" placeholder="Last Name" name="pswd">
-				    	</div>
-					<div class="form-group">
-				      	<input type="text" class="form-control" id="text" placeholder="Title" name="pswd">
-				    	</div>
-					<div class="form-group">
-				      	<input type="text" class="form-control" id="text" placeholder="Organization" name="pswd">
-				    	</div>
-					<div class="form-group">
-				      	<input type="email" class="form-control" id="email" placeholder="Email" name="pswd">
-				    	</div>
-					<div class="form-group">
-				      	<input type="number" class="form-control" id="number" placeholder="Phone" name="pswd">
-				    	</div>
-				    	<button type="submit" class="btn-theme-button mx-auto">Submit</button>
-			  	</form>
+					<form name="insightly_web_to_lead" action="https://si8aeb7c.insight.ly/WebToLead/Create" method="post">
+						<input type="hidden" name="formId" value="N6HN9N110kAZK8Mh8buhkw==">
+							<label for="insightly_firstName">First Name: </label>
+							<input id="insightly_firstName" name="FirstName" type="text" placeholder="First Name">
+						<br>
+							<label for="insightly_lastName">Last Name: </label>
+							<input id="insightly_lastName" name="LastName" type="text" placeholder="Last Name">
+						<br>
+							<label for="insightly_title">Title: </label>
+							<input id="insightly_Title" name="Title" type="text" placeholder="Title">
+						<br>
+							<label for="insightly_organization">Organization: </label>
+							<input id="insightly_organization" name="OrganizationName" type="text" placeholder="Organization">
+						<br>
+							<label for="email">Email: </label>
+							<input id="insightly_Email" name="email" type="text" placeholder="Email">
+						<br>
+							<label for="phone">Phone: </label>
+							<input id="insightly_Phone" name="phone" type="text" placeholder="Phone">
+						<br>
+							<input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="1432864">
+							<input type="hidden" id="insightly_LeadSource" name="LeadSource" value="1999905">
+						<input type="submit" value="Submit" class="btn-theme-button mx-auto" id="submit-btn">
+					</form>
 			</div><!-- End of form div -->
 
 			<div class="company-info-container col-lg-6">
