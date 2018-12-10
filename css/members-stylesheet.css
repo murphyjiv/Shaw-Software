@@ -1,3 +1,6 @@
+#header {
+    height: 450px;
+}
 
 .member-photo {
     position: relative;
@@ -38,7 +41,7 @@
     color: #9d7341;
 }
 
-.current-member {
+.member-link {
     opacity: 0.6;
 }
 

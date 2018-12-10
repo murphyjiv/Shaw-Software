@@ -342,6 +342,11 @@ hr {
     text-align: center;
 }
 
+.quote img {
+    width: 20px;
+    margin: 0 auto 10px;
+}
+
 .quote p:last-child {
     font-family: "GothamCondensed";
     font-size: 20px;
