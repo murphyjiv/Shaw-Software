@@ -16,6 +16,10 @@
 	max-width: 1080px;
 	margin: auto;
 }
+.service-link{
+	text-align: center;
+	margin: auto;
+}
 
 h2{
 	margin:auto !important;
