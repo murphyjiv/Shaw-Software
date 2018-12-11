@@ -1,10 +1,4 @@
-/*****************************************************
-                    Fonts
- *****************************************************/
-@font-face {
-    font-family: "GothamCondensed";
-	src: url('../assets/fonts/gclr.otf');
-}
+
 
 /*****************************************************
                     Layout
@@ -20,21 +14,13 @@
     margin-bottom: 50px;
 }
 
-h2{
-	margin: auto;
-	text-align: center;
-}
+
 
 
 /*****************************************************
                     Modules
  *****************************************************/
 
-.shaw-services{
- 	font-family: "GothamCondensed";
- 	font-size: 20px;
- 	letter-spacing: 2px;
- }
 
 /**************** Our Expertise Carousel *************/
 
@@ -204,7 +190,7 @@ h2{
 /*****************************************************
                     State
  *****************************************************/
-.shaw-services:hover{
+#service-links-container a:hover{
 	text-decoration: underline;
 	color: #2A3442;
 }
