@@ -243,6 +243,13 @@ responsive starting at the medium screen size */
     background: linear-gradient(to right, transparent, rgba(255,255,255,.3));
 }
 
+/* this class is assigned to headerers where the background img is
+    too bright and the contrast is not good with the white text. */
+#header-overlay.contrast-fix {
+    background: linear-gradient(to right, transparent, rgba(255,255,255,.3)),
+                rgba(0,0,0,.5);
+}
+
 #header-bg-img {
     /* Flex is required as the parent element of #header-content to vertically center header-content */
     display: flex;
@@ -253,6 +260,8 @@ responsive starting at the medium screen size */
     larger screens. */
 #header-content {
     max-width: 1024px;
+    /* this rests the text over the backgound layers */
+    z-index: 2;
 }
 
 /* The border-type line directly below the header image */
