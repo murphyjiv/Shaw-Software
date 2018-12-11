@@ -171,7 +171,7 @@ responsive starting at the medium screen size */
 		max-width: 1040px;
 		height: 90px;
 		margin: auto;
-		padding: 0;
+		padding: 0 15px;
 	}
 	#companyLogo{
 		position: relative;
