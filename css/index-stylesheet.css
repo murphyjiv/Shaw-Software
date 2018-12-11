@@ -15,9 +15,7 @@
 /*****************************************************
                     Modules
  *****************************************************/
-.shaw-services a{
-	font-size: 16px !important
-}
+
 
 
 /**************** Our Expertise Carousel *************/
@@ -192,6 +190,7 @@
 	text-decoration: underline;
 	color: #2A3442;
 }
+
 .blog-thumbnail {
     transition: all .15s;
 }
