@@ -1,12 +1,6 @@
-@font-face {
-    font-family: "GothamCondensed";
-	src: url('../assets/fonts/gclr.otf');
-}
-
 /*****************************************************
                     Fonts
  *****************************************************/
-
 @font-face {
     font-family: "GothamCondensed";
 	src: url('../assets/fonts/gclr.otf');
@@ -26,31 +20,20 @@
     margin-bottom: 50px;
 }
 
-.row{
-	max-width: 1140px;
-	margin: auto;
-}
-
-.service-link{
-	margin: auto;
-}
-
-h4,h2{
+h2{
 	margin: auto;
 	text-align: center;
 }
+
 
 /*****************************************************
                     Modules
  *****************************************************/
 
-
-
-div.service-link h4>a{
+.shaw-services{
  	font-family: "GothamCondensed";
  	font-size: 20px;
  	letter-spacing: 2px;
-
  }
 
 /**************** Our Expertise Carousel *************/
@@ -221,7 +204,7 @@ div.service-link h4>a{
 /*****************************************************
                     State
  *****************************************************/
-.service-link a:hover{
+.shaw-services:hover{
 	text-decoration: underline;
 	color: #2A3442;
 }
