@@ -4,7 +4,7 @@ $(window).scroll({previousTop: 0},
     if (currentTop < this.previousTop) {
         $("#navContainer").css({"top" : "0"});
     } else {
-        $("#navContainer").css({"top" : "-100px"});
+        $("#navContainer").css({"top" : "-400px"});
     }
     this.previousTop = currentTop;
 });
