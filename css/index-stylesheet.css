@@ -1,4 +1,13 @@
 /*****************************************************
+                    Fonts
+ *****************************************************/
+
+@font-face {
+    font-family: "GothamCondensed";
+	src: url('../assets/fonts/gclr.otf');
+}
+
+/*****************************************************
                     Layout
  *****************************************************/
 
@@ -13,24 +22,27 @@
 }
 
 .row{
-	max-width: 1080px;
+	max-width: 1140px;
 	margin: auto;
 }
 .service-link{
-	text-align: center;
 	margin: auto;
 }
-h2{
-	margin:auto !important;
-	text-align: center !important;
-}
 
+h2{
+	text-align: center;
+}
 
 /*****************************************************
                     Modules
  *****************************************************/
 
 
+ .service-link a{
+ 	font-size: 20px !important;
+ 	letter-spacing: 2px;
+ 	font-family: "GothamCondensed" !important;
+ }
 
 /**************** Our Expertise Carousel *************/
 
@@ -200,7 +212,7 @@ h2{
 /*****************************************************
                     State
  *****************************************************/
-.shaw-services a:hover{
+.service-link a:hover{
 	text-decoration: underline;
 	color: #2A3442;
 }
