@@ -13,6 +13,7 @@
     max-width: 450px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 #contact-content hr {
@@ -70,13 +71,29 @@ form #submit-btn:hover {
 
 #validation-modal {
     position: absolute;
-    bottom: 0;
-    left: -1000px;
-    height: 125px;
+    top: 100%;
+    left: 0;
+    height: 100%;
     width: 100%;
-    border: 1px solid red;
+    border: 1px solid #2a3442;
     border-radius: 10px;
     background: white;
     padding: 10px;
-    transition: left 1s ease-out;
+    transition: top .3s ease-out;
+}
+
+#validation-modal h4::before {
+    content:'*';
+    color: red;
+}
+
+#validation-modal em {
+    font-family: "GothamBold";
+}
+
+#validation-modal .message-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

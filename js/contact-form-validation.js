@@ -1,6 +1,6 @@
 const form = $("form");
 const modal = $("#validation-modal");
-const closeModal = $("button.close");
+const closeModal = $(".close");
 const firstName = $("#insightly_firstName");
 const lastName = $("#insightly_lastName");
 const email = $("insightly_Email");
@@ -15,13 +15,13 @@ form.submit( function (event) {
             $.trim(phone.val()) == ''
             )
        ) {
-        modal.css("left", "0");
+        modal.css("top", "0");
         event.preventDefault();
     }
 });
 
 closeModal.click( function() {
-    modal.css("left", "-1000px");
+    modal.css("top", "100%");
 });
 
 
