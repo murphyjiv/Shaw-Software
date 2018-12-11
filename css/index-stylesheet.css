@@ -12,6 +12,18 @@
     margin-bottom: 50px;
 }
 
+.row{
+	max-width: 1080px;
+	margin: auto;
+}
+.service-link{
+	margin: auto;
+}
+
+.right-align{
+	text-align: right;
+}
+
 /*****************************************************
                     Modules
  *****************************************************/
