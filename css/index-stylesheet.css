@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "GothamCondensed";
+	src: url('../assets/fonts/gclr.otf');
+}
+
 /*****************************************************
                     Layout
  *****************************************************/
@@ -16,14 +21,14 @@
 	max-width: 1080px;
 	margin: auto;
 }
+
 .service-link{
-	text-align: center;
 	margin: auto;
 }
 
-h2{
-	margin:auto !important;
-	text-align: center !important;
+div.service-link h4>a{
+	margin: auto;
+	text-align: center;
 }
 
 
@@ -31,7 +36,11 @@ h2{
                     Modules
  *****************************************************/
 
-
+ div.service-link h4>a{
+ 	font-family: "GothamCondensed";
+ 	font-size: 20px;
+ 	letter-spacing: 2px;
+ }
 
 /**************** Our Expertise Carousel *************/
 
