@@ -2,7 +2,7 @@
     height: 400px;
 }
 
- section#our-partners{
+section#our-partners{
 	margin: 30px auto 30px auto;
 	padding: 0px 25px;
 	max-width: 1070px;
@@ -25,15 +25,28 @@ div.partner-container *:nth-child(n+2){
 div.partner-logo-container {
 	display: flex;
 	margin: auto;
-	width: 100%;
 }
 
-.img-fluid{
-	display: block;
-	max-width: 95%;
-	max-height: 130px;
-	height: auto;
-	width: auto;
+/* Custom sizing for logos*/
+#sungaurdAS-logo{
+	width: 300px;
+	height: 99px;
+}
+#servicenow-logo{
+	width: 300px;
+	height: 45px;
+}
+#whistic-logo{
+	width: 300px;
+	height: 90.65px;
+}
+#jet-sweep-logo{
+	width: 200px;
+	height: 183px;
+}
+#jahnel-group-logo{
+	width: 170px;
+	height: 179px;
 }
 
 div.partner-container h3.partner-name{
@@ -67,10 +80,10 @@ div.partner-description-container p{
     }
     #servicenow-container{
 	    position: relative;
-	    top: 42px;
+	    top: 54px;
     }
     #whistic-container{
 	    position: relative;
-	    top: 22px;
+	    top: 8px;
     }
 }
