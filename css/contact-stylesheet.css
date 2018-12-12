@@ -3,14 +3,13 @@
 }
 
 #contact-content {
-	margin: 75px 0px;
+	margin: 75px auto;
 	padding: 0px 30px;
 	max-width: 1140px;
 }
 
 #contact-content form {
     max-width: 450px;
-    margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
