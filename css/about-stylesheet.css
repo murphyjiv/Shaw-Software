@@ -73,19 +73,19 @@
 
 @media(min-width:768px) {
     .member-card img {
-        height: 250px;
+        height: 275px;
     }
 }
 
 @media(min-width:992px) {
     .member-card img {
-        height: 320px;
+        height: 400px;
     }
 }
 
 @media(min-width:1200px) {
     .member-card img {
-        height: 400px;
+        height: 475px;
     }
 }
 
