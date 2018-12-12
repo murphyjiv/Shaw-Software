@@ -66,8 +66,6 @@
     margin-bottom: 25px;
 }
 
-
-
 .member-card img {
     position: relative;
     z-index: 10;
@@ -113,7 +111,6 @@
     text-align: center;
     background: #EBEBEB;
     z-index: 3;
-    width: 80%;
 }
 
 
@@ -132,3 +129,4 @@
     opacity: 0;
     z-index: 0;
 }
+
