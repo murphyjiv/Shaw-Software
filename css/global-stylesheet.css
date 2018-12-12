@@ -141,7 +141,7 @@ responsive starting at the medium screen size */
 }
 
 .header-page-highlight{
-	color: #
+	color: ;
 }
 
 .nav-link-txt:hover{
@@ -158,7 +158,7 @@ responsive starting at the medium screen size */
 }
 
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 	#navContainer{
 		height: 90px;
 		width: 100%;
@@ -286,13 +286,19 @@ responsive starting at the medium screen size */
 }
 
 .quote {
-    width: 60%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     text-align: center;
+}
+
+@media(min-width:576px) {
+    .quote {
+        width: 60%;
+    }
 }
 
 .quote img {
