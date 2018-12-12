@@ -12,6 +12,7 @@
     max-width: 450px;
     position: relative;
     overflow: hidden;
+    margin: auto;
 }
 
 #contact-content hr {
