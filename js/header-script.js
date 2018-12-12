@@ -2,7 +2,7 @@ $(window).scroll({previousTop: 0},
     function () {
     var currentTop = $(window).scrollTop();
     if (currentTop < this.previousTop ||
-        currentTop == 0) {
+        currentTop <= 0) {
         $("#navContainer").css({"top" : "0"});
     } else {
         $("#navContainer").css({"top" : "-400px"});
